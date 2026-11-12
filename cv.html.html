@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Israe Slimani</title>
+<style>
+:root {
+  --blue: #17365d;
+  --accent: #3976ad;
+  --pale: #edf3f9;
+  --text: #263445;
+  --muted: #64748b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 30px;
+  background: #e9eef5;
+  font-family: Arial, sans-serif;
+  color: var(--text);
+}
+.cv {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 8px 30px #142b451c;
+}
+header {
+  background: var(--blue);
+  color: white;
+  padding: 42px;
+}
+header h1 {
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+header p {
+  margin: 0;
+  color: #d7e5f4;
+  font-size: 16px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 32% 68%;
+}
+aside {
+  background: var(--pale);
+  padding: 30px 24px;
+}
+main { padding: 32px; }
+section { margin-bottom: 28px; }
+h2 {
+  font-size: 16px;
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #d8e3ef;
+  padding-bottom: 9px;
+  margin-top: 0;
+}
+h3 { font-size: 15px; margin-bottom: 5px; }
+p, li {
+  font-size: 13px;
+  line-height: 1.7;
+}
+ul { padding-left: 18px; }
+.contact p { overflow-wrap: anywhere; }
+.tag {
+  display: inline-block;
+  background: white;
+  border: 1px solid #d4e0ec;
+  padding: 6px 9px;
+  margin: 3px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
+}
+@media(max-width:650px) {
+  body { padding: 0; }
+  .content { grid-template-columns: 1fr; }
+  header { padding: 28px 22px; }
+  header h1 { font-size: 27px; }
+  aside, main { padding: 25px; }
+}
+@media print {
+  body { padding: 0; background: white; }
+  .cv { box-shadow: none; }
+  .no-print { display: none; }
+  @page { size: A4; margin: 10mm; }
+}
+</style>
+</head>
+<body>
+
+<div class="cv">
+
+<header>
+  <h1>ISRAE SLIMANI</h1>
+  <p>INFORMATIQUE · TECHNOLOGIES · INNOVATION</p>
+  <p>Profil polyvalent – Secteur des technologies</p>
+</header>
+
+<div class="content">
+
+<aside>
+<section class="contact">
+<h2>Contact</h2>
+<p>📍 [Ville, Pays]</p>
+<p>☎ [Téléphone]</p>
+<p>✉ [Adresse e-mail]</p>
+<p>LinkedIn : [Profil]</p>
+</section>
+
+<section>
+<h2>Domaines d'intérêt</h2>
+<ul>
+<li>Développement informatique</li>
+<li>Technologies web</li>
+<li>Intelligence artificielle</li>
+<li>Réseaux informatiques</li>
+<li>Cybersécurité</li>
+<li>Innovation numérique</li>
+</ul>
+</section>
+
+<section>
+<h2>Compétences</h2>
+<p class="placeholder">À compléter selon les compétences réellement maîtrisées.</p>
+<ul>
+<li>[Langages de programmation]</li>
+<li>[Outils informatiques]</li>
+<li>[Logiciels maîtrisés]</li>
+<li>[Technologies web]</li>
+</ul>
+</section>
+
+<section>
+<h2>Langues</h2>
+<ul>
+<li>[Langue – Niveau]</li>
+<li>[Langue – Niveau]</li>
+</ul>
+</section>
+
+<section>
+<h2>Qualités</h2>
+<ul>
+<li>Esprit d'analyse</li>
+<li>Curiosité technologique</li>
+<li>Capacité d'adaptation</li>
+<li>Esprit d'équipe</li>
+</ul>
+</section>
+</aside>
+
+<main>
+<section>
+<h2>Profil professionnel</h2>
+<p>
+Profil intéressé par l'informatique, les nouvelles technologies
+et l'innovation numérique. Motivé par la découverte des outils
+informatiques, le développement des compétences techniques
+et la résolution de problèmes. Souhaite évoluer dans un
+environnement technologique stimulant et participer à des
+projets numériques.
+</p>
+</section>
+
+<section>
+<h2>Expériences professionnelles</h2>
+<p class="placeholder">
+[Ajouter les expériences professionnelles, les stages ou
+les projets réalisés : poste, entreprise, dates et missions.]
+</p>
+</section>
+
+<section>
+<h2>Formation</h2>
+<p class="placeholder">
+[Ajouter le diplôme, l'établissement, la spécialité et l'année.]
+</p>
+</section>
+
+<section>
+<h2>Projets informatiques</h2>
+<p class="placeholder">
+[Présenter les projets personnels, scolaires ou professionnels,
+les outils utilisés et les résultats obtenus.]
+</p>
+</section>
+
+<section>
+<h2>Certifications</h2>
+<p class="placeholder">
+[Ajouter les certifications et formations complémentaires.]
+</p>
+</section>
+</main>
+</div>
+</div>
+
+<div class="no-print" style="text-align:center;margin:25px">
+<button onclick="window.print()"
+style="background:#17365d;color:white;padding:14px 25px;
+border:0;border-radius:6px;cursor:pointer;font-size:15px">
+Imprimer / Enregistrer en PDF
+</button>
+</div>
+
+</body>
+</html>
